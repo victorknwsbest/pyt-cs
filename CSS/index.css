@@ -1,0 +1,115 @@
+/*
+Author: Victor Molina 
+Purpose: CSS for index.html
+https://www.youtube.com/watch?v=ms9PgME2Kwo&t=11s
+*/
+
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+.nav {
+  position: fixed;
+  top: 82px;
+  left: 0px;
+  width: 140px;
+  height: 100vh;
+  background: #000026;
+  z-index: 2;
+}
+  
+.nav span {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+  
+.nav i.fa {
+  font-size: 26px;
+  color: #eee;
+}
+  
+.nav .nav-item {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+  
+.nav .main-item,
+.nav .sub-item {
+  padding: 15px 0px;
+  background: #000026;
+}
+  
+.nav .nav-item .sub-items {
+  position: absolute;
+  top: 0px;
+  left: -420px;
+  width: max-content;
+  z-index: -1;
+  transition:all 222ms ease-in-out;
+}
+  
+.nav .sub-items .sub-item {
+  float: left;
+  width: 140px;
+}
+
+.nav .main-item:hover,
+.nav .sub-item:hover {
+  background:#00acee;
+  cursor:pointer;
+}
+  
+.nav .nav-item:hover .sub-items {
+  left: 140px;
+}
+/* HEADER */
+.header {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  height: 82px;
+  /* vertical-align: middle; */
+  font-family: 'Times New Roman';
+  font-size: 28px;
+  /* text-transform: uppercase; */
+  color: #fff;
+  background: #fb4f14;
+}
+
+.header img{
+  padding-left: 28px;
+  height: 100%;
+  vertical-align: middle;
+}
+.header img:hover{
+    cursor: pointer;
+}
+.header .header-title {
+  display: inline;
+  vertical-align:middle;
+  padding-left: 26px;
+}
+/* CONTENT */
+.container {
+  position: fixed;
+  top: 82px;
+  left: 140px;
+  width: 100%;
+  height: 100vh;
+  /* background: linear-gradient(#4997d0, #000026); */
+  /* background: linear-gradient(to bottom right, #000026, #4997d0 50%, #b0c4de ,#4997d0 50%, #000026); */
+  background: linear-gradient(to bottom left , #000026, #779ecb, #bcd4e6, #779ecb, #000026);
+  opacity: 100%;
+  overflow: scroll;
+}
+.container .content-text {
+  font-size: 34px;
+  font-family: 'Times New Roman';
+  color: #000026;
+}
