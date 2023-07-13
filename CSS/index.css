@@ -75,11 +75,11 @@ html, body {
   width: 100%;
   height: 82px;
   /* vertical-align: middle; */
-  font-family: 'Times New Roman';
+  font-family: 'Verdana';
   font-size: 28px;
   /* text-transform: uppercase; */
   color: #fff;
-  background: #fb4f14;
+  background: #000026;
 }
 
 .header img{
@@ -93,7 +93,7 @@ html, body {
 .header .header-title {
   display: inline;
   vertical-align:middle;
-  padding-left: 26px;
+  padding-left: 20px;
 }
 /* CONTENT */
 .container {
@@ -104,12 +104,11 @@ html, body {
   height: 100vh;
   /* background: linear-gradient(#4997d0, #000026); */
   /* background: linear-gradient(to bottom right, #000026, #4997d0 50%, #b0c4de ,#4997d0 50%, #000026); */
-  background: linear-gradient(to bottom left , #000026, #779ecb, #bcd4e6, #779ecb, #000026);
-  opacity: 100%;
+  background: #fff;
   overflow: scroll;
 }
 .container .content-text {
-  font-size: 34px;
-  font-family: 'Times New Roman';
+  font-size: 22px;
+  font-family: 'Verdana';
   color: #000026;
 }
