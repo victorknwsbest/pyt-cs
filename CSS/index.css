@@ -1,35 +1,34 @@
 /*
 Author: Victor Molina 
 Purpose: CSS for index.html
-https://www.youtube.com/watch?v=ms9PgME2Kwo&t=11s
 */
 
 html, body {
-    margin: 0px;
+    margin: 0%;
     height: 100%;
 }
 
 .nav {
-  position: fixed;
-  top: 82px;
-  left: 0px;
-  width: 140px;
-  height: 100vh;
+  position: absolute;
+  top: 8%;
+  left: 0%;
+  width: 8%;
+  height: 92%;
   background: #000026;
   z-index: 2;
 }
   
 .nav span {
   display: block;
-  font-size: 14px;
+  font-size: .75vw;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 10%;
 }
   
 .nav i.fa {
-  font-size: 26px;
+  font-size: 2vw;
   color: #eee;
 }
   
@@ -41,24 +40,26 @@ html, body {
   
 .nav .main-item,
 .nav .sub-item {
-  padding: 15px 0px;
+  padding: 10% 0%;
   background: #000026;
+  /* maybe add some glossy texture on hover */
 }
   
 .nav .nav-item .sub-items {
   position: absolute;
-  top: 0px;
-  left: -420px;
-  width: max-content;
+  top: 0%;
+  left: -100%;
+  /* <<< */
+  width: 100%;
   z-index: -1;
   transition:all 222ms ease-in-out;
 }
-  
+  /* need to make the size change along with nav items  */
 .nav .sub-items .sub-item {
   float: left;
-  width: 140px;
+  /* <<< */
+  width: 100%;
 }
-
 .nav .main-item:hover,
 .nav .sub-item:hover {
   background:#00acee;
@@ -66,25 +67,24 @@ html, body {
 }
   
 .nav .nav-item:hover .sub-items {
-  left: 140px;
+  left: 100%;
 }
+
 /* HEADER */
 .header {
-  position: fixed;
-  left: 0px;
+  position: relative;
+  left: 0%;
   width: 100%;
-  height: 82px;
-  /* vertical-align: middle; */
-  font-family: 'Verdana';
-  font-size: 28px;
-  /* text-transform: uppercase; */
+  height: 8%;
+  font-family:'Lucida Sans';
+  font-size: 1.75vw;
   color: #fff;
   background: #000026;
 }
 
 .header img{
-  padding-left: 28px;
-  height: 100%;
+  padding-left: 1.72%;
+  height: 4.74vw;
   vertical-align: middle;
 }
 .header img:hover{
@@ -93,22 +93,29 @@ html, body {
 .header .header-title {
   display: inline;
   vertical-align:middle;
-  padding-left: 20px;
+  padding-left: 1.2%;
 }
-/* CONTENT */
+/* CONTAINER */
 .container {
-  position: fixed;
-  top: 82px;
-  left: 140px;
-  width: 100%;
-  height: 100vh;
-  /* background: linear-gradient(#4997d0, #000026); */
-  /* background: linear-gradient(to bottom right, #000026, #4997d0 50%, #b0c4de ,#4997d0 50%, #000026); */
-  background: #fff;
-  overflow: scroll;
+  position: absolute;
+  left: 8%;
+  width: 92%;
+  height: 92%;
+  overflow: hidden;
 }
-.container .content-text {
-  font-size: 22px;
-  font-family: 'Verdana';
-  color: #000026;
+.container .flow-container{
+  position: relative;
+  left: 0%;
+  height: 100%;
+  width: 15%;
+  background-color: #000026b2;
+  text-align: left;
+  opacity: 100%;
+  overflow: hidden;
+}
+.container .flow-container .flow-element{
+  color: azure;
+  font-style: italic;
+  width: 100%;
+  height: 6%;
 }
